@@ -1,7 +1,6 @@
-import 'dart:async';
+
 
 import 'package:flutter/material.dart';
-import 'package:new_walls/adsetup/ads_setup.dart';
 import 'package:new_walls/models/api_model.dart';
 import 'package:new_walls/reusablewidgets.dart/full_view_tile.dart';
 import 'package:new_walls/viewmodel/constants.dart';
@@ -15,13 +14,6 @@ class CategoryScreen extends StatefulWidget {
 }
 
 class _CategoryScreenState extends State<CategoryScreen> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(const Duration(seconds: 5), () {
-      AdsSetup().showInterstitialAd();
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +39,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
           },
         ),
       ),
-      bottomNavigationBar: AdsSetup().nativeBannerAd(),
+      
     );
   }
 }

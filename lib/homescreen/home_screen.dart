@@ -1,7 +1,5 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:new_walls/adsetup/ads_setup.dart';
 import 'package:new_walls/homescreen/hometabs/categories.dart';
 import 'package:new_walls/homescreen/hometabs/premium.dart';
 import 'package:new_walls/homescreen/hometabs/random.dart';
@@ -15,14 +13,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(const Duration(seconds: 5), () {
-      AdsSetup().showInterstitialAd();
-    });
-  }
-
+ 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -92,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
               RandomTab(),
             ],
           ),
-          bottomNavigationBar: AdsSetup().nativeBannerAd(),
+         
         ),
       ),
     );

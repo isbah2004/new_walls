@@ -17,7 +17,7 @@ class AppTheme {
 
   static TextStyle bodyLarge = GoogleFonts.roboto(
     textStyle: const TextStyle(
-      fontSize: 18,
+      fontSize: 16,
       color: Colors.white,
     ),
   );

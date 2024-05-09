@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_walls/reusablewidgets.dart/premium_tile.dart';
+import 'package:new_walls/reusablewidgets.dart/full_view_tile.dart';
 import 'package:new_walls/viewmodel/constants.dart';
 import 'package:new_walls/viewmodel/view_model.dart';
 import 'package:provider/provider.dart';
@@ -22,7 +22,7 @@ class PremiumTab extends StatelessWidget {
         itemBuilder: (context, index) {
            int placeholderIndex = index % Constants.placeholder.length;
           return Hero(tag: viewModelProvider.premiumList[index].url.toString(),
-            child: PremiumTile(
+            child: FullViewTile(
               imageUrl: viewModelProvider.premiumList[index].url.toString(),
               placeholder: Constants.placeholder[placeholderIndex].toString(),
             ),

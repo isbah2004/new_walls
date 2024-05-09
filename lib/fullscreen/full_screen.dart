@@ -1,9 +1,7 @@
-import 'dart:async';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:new_walls/adsetup/ads_setup.dart';
 import 'package:new_walls/reusablewidgets.dart/download_button.dart';
 import 'package:new_walls/reusablewidgets.dart/pop_button.dart';
 
@@ -17,13 +15,7 @@ class FullScreen extends StatefulWidget {
 }
 
 class _FullScreenState extends State<FullScreen> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(const Duration(seconds: 5), () {
-      AdsSetup().showInterstitialAd();
-    });
-  }
+ 
 
   @override
   Widget build(BuildContext context) {
